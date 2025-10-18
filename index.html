@@ -491,6 +491,35 @@
             font-size: 1.1em;
         }
 
+        /* Download Button */
+        .download-btn {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, #00d9ff, #7b2ff7);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            box-shadow: 0 5px 25px rgba(0, 217, 255, 0.5);
+            transition: all 0.3s ease;
+            z-index: 1000;
+            border: none;
+        }
+
+        .download-btn:hover {
+            transform: translateY(-5px) scale(1.1);
+            box-shadow: 0 10px 40px rgba(0, 217, 255, 0.7);
+        }
+
+        .download-btn svg {
+            width: 28px;
+            height: 28px;
+        }
+
         @media (max-width: 1024px) {
             .responsibilities {
                 grid-template-columns: 1fr;
@@ -531,6 +560,18 @@
             .responsibilities {
                 grid-template-columns: 1fr;
             }
+
+            .download-btn {
+                width: 50px;
+                height: 50px;
+                bottom: 20px;
+                right: 20px;
+            }
+
+            .download-btn svg {
+                width: 24px;
+                height: 24px;
+            }
         }
     </style>
 </head>
@@ -562,6 +603,7 @@
             <div class="contact-links">
                 <a href="mailto:abinash.d07078@gmail.com" class="contact-btn">📧 Email</a>
                 <a href="tel:+919880851397" class="contact-btn">📞 Call</a>
+                <a href="https://www.linkedin.com/in/abinash-dash-py/" target="_blank" class="contact-btn">💼 LinkedIn</a>
                 <a href="https://github.com/abinash-dash" target="_blank" class="contact-btn">💻 GitHub</a>
             </div>
             <div class="scroll-indicator" onclick="scrollToNext(0)">
@@ -691,6 +733,15 @@
         <p>📍 Bangalore, Karnataka, India</p>
         <p style="margin-top: 10px; opacity: 0.7;">© 2025 Abinash Dash. All rights reserved.</p>
     </footer>
+
+    <!-- Download Button -->
+    <button class="download-btn" onclick="window.print()" title="Download Resume as PDF">
+        <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <polyline points="7 10 12 15 17 10"></polyline>
+            <line x1="12" y1="15" x2="12" y2="3"></line>
+        </svg>
+    </button>
 
     <script>
         // Create animated particles
