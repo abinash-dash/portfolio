@@ -271,37 +271,44 @@
 
         /* Experience Section */
         .experience-content {
-            max-width: 1000px;
+            max-width: 1100px;
             margin: 0 auto;
         }
 
         .experience-card {
             background: rgba(26, 26, 46, 0.6);
             border-radius: 20px;
-            padding: 50px;
+            padding: 40px;
             backdrop-filter: blur(10px);
             border: 1px solid rgba(0, 217, 255, 0.2);
+            margin-bottom: 30px;
         }
 
         .experience-header {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin-bottom: 40px;
+            margin-bottom: 30px;
             flex-wrap: wrap;
             gap: 20px;
         }
 
         .company-info h3 {
-            font-size: 2em;
+            font-size: 1.8em;
             color: #00d9ff;
-            margin-bottom: 10px;
+            margin-bottom: 5px;
+        }
+
+        .company-location {
+            color: #999;
+            font-size: 0.95em;
+            margin-bottom: 8px;
         }
 
         .company-link {
             color: #7b2ff7;
             text-decoration: none;
-            font-size: 1.1em;
+            font-size: 1em;
         }
 
         .company-link:hover {
@@ -310,25 +317,25 @@
 
         .duration {
             background: rgba(123, 47, 247, 0.2);
-            padding: 12px 24px;
+            padding: 10px 20px;
             border-radius: 25px;
-            font-size: 1.1em;
+            font-size: 1em;
             color: #7b2ff7;
             border: 1px solid #7b2ff7;
         }
 
         .responsibilities {
             display: grid;
-            gap: 20px;
-            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 15px;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
         }
 
         .responsibility-item {
-            padding-left: 35px;
+            padding-left: 30px;
             position: relative;
             color: #bbb;
-            line-height: 1.8;
-            font-size: 1.05em;
+            line-height: 1.7;
+            font-size: 1em;
         }
 
         .responsibility-item::before {
@@ -336,7 +343,7 @@
             position: absolute;
             left: 0;
             color: #00d9ff;
-            font-size: 1.8em;
+            font-size: 1.6em;
             line-height: 1;
         }
 
@@ -629,26 +636,65 @@
     <section class="section" id="section-2">
         <div class="container experience-content">
             <h2 class="section-title">Work Experience</h2>
+            
+            <!-- AI Tech Solutions -->
             <div class="experience-card">
                 <div class="experience-header">
                     <div class="company-info">
                         <h3>AI TECH SOLUTIONS LTD</h3>
+                        <div class="company-location">Bangalore, Karnataka, India</div>
                         <a href="https://www.aitechsolutionsltd.com" target="_blank" class="company-link">www.aitechsolutionsltd.com</a>
                     </div>
-                    <div class="duration">June 2022 - Present</div>
+                    <div class="duration">May 2025 - Present</div>
                 </div>
                 <div class="responsibilities">
-                    <div class="responsibility-item">Developed and maintained automated Jenkins pipelines for continuous integration and deployment</div>
-                    <div class="responsibility-item">Built containerized applications with Docker to improve deployment consistency</div>
-                    <div class="responsibility-item">Managed Kubernetes clusters for scalable, reliable application deployment</div>
-                    <div class="responsibility-item">Handled production and development environments ensuring uptime</div>
-                    <div class="responsibility-item">Troubleshot and resolved production incidents to minimize downtime</div>
-                    <div class="responsibility-item">Optimized deployment workflows and infrastructure</div>
-                    <div class="responsibility-item">Automated Docker image builds and container registry management</div>
-                    <div class="responsibility-item">Configured Kubernetes resources for application management</div>
-                    <div class="responsibility-item">Ensured security best practices in CI/CD pipelines</div>
-                    <div class="responsibility-item">Collaborated with cross-functional teams to optimize release cycles</div>
-                    <div class="responsibility-item">Conducted root cause analysis and implemented preventive measures</div>
+                    <div class="responsibility-item">Developed and maintained automated Jenkins pipelines for continuous integration and deployment with integrated webhooks for seamless build triggers</div>
+                    <div class="responsibility-item">Built and managed containerized applications using Docker to ensure consistent and reliable deployments across environments</div>
+                    <div class="responsibility-item">Administered Kubernetes clusters for scalable and highly available application deployments</div>
+                    <div class="responsibility-item">Oversaw both production and development environments, ensuring high uptime and smooth, error-free releases</div>
+                    <div class="responsibility-item">Troubleshot and resolved production incidents to minimize downtime and improve overall system reliability</div>
+                    <div class="responsibility-item">Collaborated with development and QA teams to streamline deployment workflows and infrastructure automation</div>
+                    <div class="responsibility-item">Automated Docker image builds and integrated them with container registries (e.g., Docker Hub, ECR) for efficient deployment pipelines</div>
+                    <div class="responsibility-item">Configured and managed Kubernetes resources such as Deployments, Services, Ingress, Secrets, and ConfigMaps for application orchestration</div>
+                    <div class="responsibility-item">Implemented security best practices in CI/CD pipelines, including credential management and vulnerability scanning using Trivy and SonarQube</div>
+                    <div class="responsibility-item">Conducted root cause analysis and implemented preventive measures to eliminate recurring production issues</div>
+                    <div class="responsibility-item">Migrated application deployments from PM2 to Kubernetes, achieving zero-downtime deployments</div>
+                    <div class="responsibility-item">Transitioned GitHub Actions–based deployments to Kubernetes for improved scalability and reliability</div>
+                    <div class="responsibility-item">Set up centralized monitoring and alerting systems using Prometheus and Grafana for proactive performance tracking</div>
+                    <div class="responsibility-item">Optimized resource utilization in Kubernetes clusters by fine-tuning CPU, memory requests, and autoscaling policies</div>
+                    <div class="responsibility-item">Managed reverse proxies and SSL termination using Nginx and Apache, ensuring secure HTTPS communication</div>
+                    <div class="responsibility-item">Automated configuration management using shell scripts and YAML templates to maintain consistency across environments</div>
+                    <div class="responsibility-item">Improved build efficiency by implementing parallel stages and caching in Jenkins pipelines</div>
+                    <div class="responsibility-item">Collaborated with developers to containerize legacy applications and modernize deployment workflows</div>
+                    <div class="responsibility-item">Monitored CI/CD health metrics and optimized Jenkins node performance to handle high-load build jobs</div>
+                    <div class="responsibility-item">Documented deployment procedures and best practices to support knowledge sharing and onboarding</div>
+                </div>
+            </div>
+
+            <!-- Sanvan Software -->
+            <div class="experience-card">
+                <div class="experience-header">
+                    <div class="company-info">
+                        <h3>SANVAN SOFTWARE</h3>
+                        <div class="company-location">Bangalore, Karnataka, India</div>
+                    </div>
+                    <div class="duration">March 2023 - April 2025</div>
+                </div>
+                <div class="responsibilities">
+                    <div class="responsibility-item">Created end-to-end CI/CD pipelines for Node/Python web apps using Jenkins, Docker, and Kubernetes</div>
+                    <div class="responsibility-item">Deployed full-stack applications on AWS EC2 with Docker and Nginx reverse proxy</div>
+                    <div class="responsibility-item">Configured SonarQube and Nexus for static code analysis and artifact management</div>
+                    <div class="responsibility-item">Set up monitoring dashboards using Grafana connected to Prometheus for Kubernetes metrics</div>
+                    <div class="responsibility-item">Managed application configurations securely using AWS Parameter Store and Secrets Manager</div>
+                    <div class="responsibility-item">Assisted in setting up CI/CD pipelines using Jenkins and GitHub Actions</div>
+                    <div class="responsibility-item">Worked on version control using Git and implemented branching strategies for collaborative development</div>
+                    <div class="responsibility-item">Deployed containerized applications using Docker and created custom Dockerfiles for microservices</div>
+                    <div class="responsibility-item">Configured and maintained Kubernetes clusters for deploying and scaling applications</div>
+                    <div class="responsibility-item">Implemented infrastructure provisioning using Terraform and AWS CloudFormation</div>
+                    <div class="responsibility-item">Monitored application and infrastructure health using Prometheus and Grafana</div>
+                    <div class="responsibility-item">Worked with AWS services including EC2, S3, IAM, and VPC for cloud-based applications</div>
+                    <div class="responsibility-item">Assisted in setting up reverse proxy and load balancing using Nginx and Apache</div>
+                    <div class="responsibility-item">Collaborated with teams for smooth deployment in dev, UAT, and production environments</div>
                 </div>
             </div>
         </div>
@@ -702,15 +748,23 @@
                 <div class="skill-card"><div class="skill-name">Jenkins</div></div>
                 <div class="skill-card"><div class="skill-name">Docker</div></div>
                 <div class="skill-card"><div class="skill-name">Kubernetes</div></div>
-                <div class="skill-card"><div class="skill-name">PM2</div></div>
+                <div class="skill-card"><div class="skill-name">AWS</div></div>
+                <div class="skill-card"><div class="skill-name">Terraform</div></div>
+                <div class="skill-card"><div class="skill-name">Git</div></div>
                 <div class="skill-card"><div class="skill-name">Trivy</div></div>
                 <div class="skill-card"><div class="skill-name">SonarQube</div></div>
                 <div class="skill-card"><div class="skill-name">Prometheus</div></div>
                 <div class="skill-card"><div class="skill-name">Grafana</div></div>
-                <div class="skill-card"><div class="skill-name">Apache</div></div>
                 <div class="skill-card"><div class="skill-name">Nginx</div></div>
+                <div class="skill-card"><div class="skill-name">Apache</div></div>
+                <div class="skill-card"><div class="skill-name">GitHub Actions</div></div>
+                <div class="skill-card"><div class="skill-name">Nexus</div></div>
+                <div class="skill-card"><div class="skill-name">AWS & Services</div></div>
+                <div class="skill-card"><div class="skill-name">ACE Cloud</div></div>
+                <div class="skill-card"><div class="skill-name">putty</div></div>
+                <div class="skill-card"><div class="skill-name">PM2</div></div>
                 <div class="skill-card"><div class="skill-name">GitHub</div></div>
-                <div class="skill-card"><div class="skill-name">VS Code</div></div>
+                <div class="skill-card"><div class="skill-name">Termius</div></div>
             </div>
         </div>
     </section>
@@ -752,47 +806,4 @@
             particle.style.height = particle.style.width;
             particle.style.left = Math.random() * 100 + '%';
             particle.style.top = Math.random() * 100 + '%';
-            particle.style.animationDelay = Math.random() * 20 + 's';
-            particle.style.animationDuration = Math.random() * 20 + 10 + 's';
-            particlesContainer.appendChild(particle);
-        }
-
-        // Navigation dots
-        const navDots = document.querySelectorAll('.nav-dot');
-        const sections = document.querySelectorAll('.section');
-
-        navDots.forEach(dot => {
-            dot.addEventListener('click', () => {
-                const sectionIndex = parseInt(dot.getAttribute('data-section'));
-                sections[sectionIndex].scrollIntoView({ behavior: 'smooth' });
-            });
-        });
-
-        // Update active dot on scroll
-        window.addEventListener('scroll', () => {
-            let current = '';
-            sections.forEach((section, index) => {
-                const sectionTop = section.offsetTop;
-                const sectionHeight = section.clientHeight;
-                if (window.pageYOffset >= sectionTop - sectionHeight / 3) {
-                    current = index;
-                }
-            });
-
-            navDots.forEach((dot, index) => {
-                dot.classList.remove('active');
-                if (index === current) {
-                    dot.classList.add('active');
-                }
-            });
-        });
-
-        // Scroll to next section
-        function scrollToNext(currentIndex) {
-            if (currentIndex < sections.length - 1) {
-                sections[currentIndex + 1].scrollIntoView({ behavior: 'smooth' });
-            }
-        }
-    </script>
-</body>
-</html>
+            particle.style.animationDelay = Math.random() * 20 + 's
